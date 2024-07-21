@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>S.M. Properties</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+      <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+     <!--- Icon script-->
+     <script src="https://kit.fontawesome.com/3f6003f059.js" crossorigin="anonymous"></script>
+
+
+    <style type="text/css">
+        
+        .overlay {
+    background-image: linear-gradient(to right, rgba(90, 100, 232, 0.9), rgba(84, 96, 234, 0.9));
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    padding: 110px 0;
+}
+.section-bg {
+    background-size: cover;
+    position: relative;
+    background-position: left;
+    z-index: 0;
+    padding: 0;
+    min-height: auto;
+    overflow: hidden;
+}
+.contact-form {
+    position: relative;
+    padding: 45px 0 45px 60px;
+}
+
+.contact-form:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 10px 40px 40px rgba(0,0,0,.2);
+    pointer-events: none;
+    right: auto;
+    width: 100vw;
+}
+.particles-js-canvas-el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.contact-form input {
+    border: 0;
+    background: transparent;
+
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+}
+
+.contact-form textarea {
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0,0,0,.1);
+}
+.contact-form input::placeholder {
+  color:#222;
+}
+.contact-form textarea::placeholder {
+  color:#222;
+
+}
+.contact-form input {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+}
+.contact-form input:hover, .contact-form input:focus{
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-bottom-color: rgb(254, 132, 111);
+
+}
+.contact-form textarea:hover, .contact-form textarea:focus{
+  background: transparent; 
+    outline: none;
+  box-shadow: none;
+     border: 2px solid transparent;
+    border-bottom-color: rgb(254, 132, 111);
+
+}
+
+
+.taso-btn {
+    background-color: #fff;
+    margin: 25px 0;
+    color: #214dcb;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.32);
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.17);
+}
+.contact-info {
+    padding: 0 30px 0px 0;
+}
+
+h2.contact-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #ececec;
+}
+
+ul.contact-info {
+    margin-top: 30px;
+}
+
+ul.contact-info li {
+    margin-bottom: 22px;
+}
+
+
+
+ul.contact-info span {
+    font-size: 20px;
+    line-height: 26px;
+}
+ul.contact-info li {
+    display: flex;
+    width: 100%;
+}
+
+.info-left {
+    width: 10%;
+}
+
+.info-left i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.info-right h4 {
+    color: #fff;
+    font-size: 18px;
+}
+.contact-page .info-left i{
+color: #FE846F;
+}
+.btn {
+display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px 10px;
+    font-size: 17px;
+    line-height: 28px;
+    border: 0px;
+    border-radius: 10px;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.btn-big {
+    color: #ffffff;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 45, 45, 0.47843137254901963);
+    box-shadow: 2px 5px 10px 0px rgba(45, 45, 45, 0.19);
+    color: #fff !important;
+    margin-right: 20px;
+    background: #4155c4;
+    transition: .2s;
+    border: 2px solid #4155c4;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+.contact-form {
+    padding: 30px;
+}
+.contact-form:before {
+    width: 100%;
+}
+
+}
+
+    /* IONS STYLE*/
+.stt{
+border-radius:30px;
+border: 2px solid #fff;  
+text-align:center;
+height: 60px;
+ position: fixed;
+width:60px;
+bottom:20px;
+right:35px;
+color: white;
+    background-color:green;
+ animation: glow 1s infinite alternate;
+
+text-align: center;
+z-index: 100;
+ 
+}
+
+.stt2{
+border-radius:30px;
+border: 2px solid #fff;  
+text-align:center;
+height: 60px;
+ position: fixed;
+width:60px;
+bottom:20px;
+left:35px;
+  background-color:blue;
+ animation: glow 1s infinite alternate;
+
+text-align: center;
+z-index: 100;
+ 
+}
+    </style>
+
+</head>
+
+<body>
+
+     <!--phoneandwhatsapp_icon-->
+        <a href="https://api.whatsapp.com/send?phone=+91 7385943917
+        &amp;text=Hi there! I have a question :)" class="stt" target="blank"><i class="fa fa-whatsapp fa-spin   fa-2x" style="font-size:35px; text-align: center; margin-top: 10px; color: #fff;"  ></i></a>
+        <a href="tel:+91 7385943917" class="stt2" ><i class="fa fa-phone fa-spin   fa-2x" style="font-size:30px; text-align: center; margin-top: 12px; color: #fff;"  ></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="south-load"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="h-100 d-md-flex justify-content-between align-items-center">
+                <div class="email-address">
+                    <a href="mailto:shantkumarmhetreak@gmail.com"><i class="fa fa-envelope mr-2"></i>shantkumarmhetreak@gmail.com</a>
+                </div>
+                <div class="phone-number d-flex">
+                    <div class="icon">
+                        <img src="img/icons/phone-call.png" alt="">
+                    </div>
+                    <div class="number">
+                        <a href="tel:+91 7385943917">+91 7385943917</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header Area -->
+        <div class="main-header-area" id="stickyHeader" style="background-color: #001a2b;">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="southNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="index.html"><img src="img/bg-img/2.png" alt="" style="height: 70px; width: 80px;"></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                               
+                                <li><a href="about-us.html">About Us</a></li>
+                               <li><a href="listings.html">Properties</a></li>
+                               
+                                 <li><a href="blog.html">Gallery</a></li>
+                        
+                               
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                            
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img" style="background-image: url(img/bg-img/hero1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <section class="section-bg" style="background-image: url(https://i.ibb.co/9p3Cnk9/slider-2.jpg);"  data-scroll-index="7">
+          <div class="overlay pt-100 pb-100 ">
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="contact-info">
+
+                            <h2 class="contact-title">Feel Free to Contact Us!</h2>
+                            <p></p>
+                            <ul class="contact-info">
+                                <li>
+                                  <div class="info-left">
+                                      <i class="fas fa-mobile-alt"></i>
+                                  </div>
+                                  <div class="info-right">
+                                      <h4>+91 7385943917</h4>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="info-left">
+                                      <i class="fas fa-at"></i>
+                                  </div>
+                                  <div class="info-right">
+                                      <h4>shantkumarmhetreak@gmail.com</h4>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="info-left">
+                                      <i class="fas fa-map-marker-alt"></i>
+                                  </div>
+                                  <div class="info-right">
+                                      <h4>Krushna Shruti Residency <br>Flat No.202 near Kumar Park Infinia <br> Bhekrainagar  Pune - 412308</h4>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                            <div class="contact-form">
+                                        <!--Contact Form-->
+                                        <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                                            <div class="row">
+                                               <div class="col-md-12">
+                                                  <div class="form-group">
+                                                     <input type="text" name="name" class="form-control" id="first-name" placeholder="Enter Your Name *" required="required">
+                                                  </div>
+                                               </div>
+                                               <div class="col-md-12">
+                                                  <div class="form-group">
+                                                     <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email *" required="required">
+                                                  </div>
+                                               </div>
+
+                                               <div class="col-md-12">
+                                                  <div class="form-group">
+                                                     <input type="phone" name="phone" class="form-control" id="phone" placeholder="Enter Your Mobile *" required="required">
+                                                  </div>
+                                               </div>
+
+                                               <div class="col-md-12">
+                                                  <div class="form-group">
+                                                       <textarea rows="4" name="message" class="form-control" id="description" placeholder="Enter Your Message *" required="required"></textarea>
+                                                  </div>
+                                               </div>
+                                                <div class="col-md-12">
+                                                    <!--contact button-->
+                                                    <button  class="btn-big btn btn-bg">
+                                                        Send Us <i class="fas fa-arrow-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                    </div>
+               </div>
+           </div>
+              </div>
+        </section>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url(img/bg-img/cta.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area ">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <!-- Widget Title -->
+                            <div class="widget-title mb-4">
+                                <h6>About Us</h6>
+                            </div>
+                             
+                             <div class="featured-properties-slides owl-carousel">
+                                <!-- Single Slide -->
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="img/bg-img/a-2.jpg" alt=""></a>
+                                </div>
+                                <!-- Single Slide -->
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="img/bg-img/a-1.jpg" alt=""></a>
+                                </div>
+                                <!-- Single Slide -->
+                                <div class="single-featured-properties-slide">
+                                    <a href="#"><img src="img/bg-img/a-3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            
+                            <p class="text-white py-2">Leading India No. 1, Old and New Property Consultants we are last 7+ Years Experience in Fields we are 500+ Happy Customer !</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <!-- Widget Title -->
+                           
+                            
+                            <div class="widget-title mb-4">
+                                <h6>Contact</h6>
+                            </div>
+                            <!-- Address -->
+                            <div class="address">
+                                <h6><img src="img/icons/phone-call.png" alt=""> +91 7385943917</h6>
+                                <h6><img src="img/icons/envelope.png" alt=""> shantkumarmhetreak@gmail.com</h6>
+                                <h6><img src="img/icons/location.png" alt="">Krushna Shruti Residency <br>Flat No.202 near Kumar Park Infinia Bhekrainagar <br> Pune - 412308</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget-area ">
+                            <!-- Widget Title -->
+                            <div class="widget-title mb-4">
+                                <h6>Links</h6>
+                            </div>
+                            <!-- Nav -->
+                            <ul class="useful-links-nav  align-items-center ">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                
+                                <li><a href="listings.html">Properties</a></li>
+                               
+                                
+                                <li><a href="blog.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                               
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area mb-100">
+                            <!-- Widget Title -->
+                            <div class="widget-title mb-4">
+                                <h6>Featured Properties</h6>
+                            </div>
+                            <!-- Featured Properties Slides -->
+                             <!-- <iframe style="width: 100%; height: 200px;"
+                         src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d30268.938444245938!2d73.91933230079995!3d18.500986033805404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3bc2c048e2ca5ba7%3A0xf8f8f4a792c1beb2!2sMagarpatta%20City%2C%20Magarpatta%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra!3m2!1d18.5146494!2d73.93224699999999!4m5!1s0x3bc2e92f0cfe6657%3A0xdf03fd61a96c560e!2sRam%20Rama%20Estate%2C%201st%20floor%2C%20Lane%20No%2010%2CTukai%20Darshan%2C%20Infront%20of%20SP%20Infocity%20Phursungi%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20412308!3m2!1d18.4881319!2d73.9504376!5e0!3m2!1sen!2sin!4v1711172372346!5m2!1sen!2sin" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                          <ul class="useful-links-nav  align-items-center ">
+                                <li><a href="index.html">Kumar Park Infinia</a></li>
+                                <li><a href="about.html">Kumar Primus</a></li>
+                                
+                                <li><a href="listings.html">Kumar Picasso</a></li>
+                               
+                                
+                                <li><a href="blog.html">Kumar Megapolis</a></li>
+                                <li><a href="contact.html">Princetown Royal</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Text -->
+        <div class="copywrite-text d-flex align-items-center justify-content-center">
+            <p class="copyright m-0 text-light  text-center py-2 " style="font-size: 15px;">Copyright &copy; <a class="text-white" href="#" style="font-size: 15px;">2024</a>. All Rights Reserved |S.M. Properties| Powered By - <a class="text-white" href="#" style="font-size: 15px;">Jyoti Sarokar</a>
+                        </p>>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <script src="js/classy-nav.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="js/map-active.js"></script>
+
+</body>
+
+</html>
